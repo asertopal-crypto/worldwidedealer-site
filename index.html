@@ -78,13 +78,13 @@ section.block{padding:100px 0}
 .logowall:before{content:"";position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1586528116022-aeda1613c63d?w=1800&q=60&auto=format&fit=crop") center/cover;opacity:.22}
 .logowall:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,37,70,.55),rgba(8,37,70,.92) 60%)}
 .lw-grid{position:relative;z-index:1;display:grid;grid-template-columns:auto 1fr;gap:72px;align-items:center}
-.circles{display:grid;grid-template-columns:repeat(5,112px);gap:20px}
-.circle{width:112px;height:112px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;
+.circles{display:grid;grid-template-columns:repeat(7,86px);gap:14px}
+.circle{width:86px;height:86px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;
   box-shadow:0 6px 22px rgba(0,0,0,.25)}
 .circle img{max-width:72%;max-height:34%;object-fit:contain}
 .circle img.tall{max-height:56%}
 .circle.dark{background:#111}
-.circle.word span{color:#1A1A1A;font-size:15px;text-align:center;line-height:1.15}
+.circle.word span{color:#1A1A1A;font-size:11.5px;text-align:center;line-height:1.15}
 .circle.ph{background:rgba(255,255,255,.08);border:2px dashed rgba(255,255,255,.35);box-shadow:none;color:#9FC3E3;font-weight:600;font-size:13px}
 .lw-copy b{display:block;font-size:clamp(40px,4.6vw,58px);font-weight:800;line-height:1}
 .lw-copy p{font-size:20px;margin-top:14px;color:#D6E7F6;max-width:22em}
@@ -179,7 +179,7 @@ footer{background:var(--steel);color:#BFD8EE;padding:48px 0 36px;font-size:14.5p
 
 /* Responsive */
 @media (max-width:1080px){
-  .circles{grid-template-columns:repeat(4,112px)}
+  .circles{grid-template-columns:repeat(6,86px)}
 }
 @media (max-width:980px){
   .nav{display:none;position:absolute;top:78px;left:0;right:0;background:var(--steel);flex-direction:column;padding:20px 24px 28px;gap:18px;align-items:flex-start}
@@ -195,14 +195,14 @@ footer{background:var(--steel);color:#BFD8EE;padding:48px 0 36px;font-size:14.5p
   .steps .num{position:absolute;left:0;top:0}
   .ps-row{grid-template-columns:1fr}
   .ps-row .prob{border-right:0;border-bottom:1px dashed var(--line)}
-  .circles{grid-template-columns:repeat(4,1fr);gap:12px}
+  .circles{grid-template-columns:repeat(6,1fr);gap:10px}
   .circle{width:100%;height:auto;aspect-ratio:1}
 }
 @media (max-width:560px){
   body{font-size:16px}
   .cat-grid{grid-template-columns:repeat(2,1fr)}
-  .circles{grid-template-columns:repeat(3,1fr)}
-  .circle.word span{font-size:12px}
+  .circles{grid-template-columns:repeat(4,1fr)}
+  .circle.word span{font-size:10px}
   .pair{grid-template-columns:1fr}
   section.block{padding:72px 0}
   form.partner{padding:26px 20px}
@@ -368,6 +368,16 @@ footer{background:var(--steel);color:#BFD8EE;padding:48px 0 36px;font-size:14.5p
       <div class="circle word"><span style="font-family:Georgia,serif;letter-spacing:3px">SHINERY</span></div>
       <div class="circle word"><span style="font-family:Georgia,serif;font-style:italic">Sweet Water<br>Decor</span></div>
       <div class="circle word"><span style="font-family:Georgia,serif">Hawaii's Best</span></div>
+      <div class="circle dark"><img src="assets/brands/codeage.png" alt="Codeage"></div>
+      <div class="circle"><img src="assets/brands/maryruth.png" alt="MaryRuth Organics" class="tall"></div>
+      <div class="circle"><img src="assets/brands/doublewood.svg" alt="Double Wood Supplements" class="tall"></div>
+      <div class="circle"><img src="assets/brands/nutricost.png" alt="Nutricost"></div>
+      <div class="circle"><img src="assets/brands/zhou.png" alt="Zhou Nutrition"></div>
+      <div class="circle"><img src="assets/brands/naturium.png" alt="Naturium"></div>
+      <div class="circle"><img src="assets/brands/prequel.png" alt="Prequel"></div>
+      <div class="circle"><img src="assets/brands/madhippie.png" alt="Mad Hippie"></div>
+      <div class="circle word"><span style="font-weight:800;letter-spacing:2px">VERSED</span></div>
+      <div class="circle word"><span style="font-weight:700;letter-spacing:3px">ACURE</span></div>
     </div>
     <div class="lw-copy">
       <b id="lw-title">1,500+ brands</b>
