@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WORLDWIDEDEALER | Amazon Distribution for Brands</title>
+<meta name="description" content="WORLDWIDEDEALER LLC is a U.S. multichannel distributor. We buy your products wholesale, sell them as your authorized Amazon reseller and protect your brand.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E2D52; --deep:#0A2140; --steel:#164A7E; --sky:#3FA9E5; --mist:#DDEFFB;
+  --amber:#F5A623; --amber-dk:#DE9112; --paper:#FFFFFF; --cloud:#F3F8FC; --text:#33475E; --line:#D6E4F0;
+  --head:'Montserrat',sans-serif; --body:'Source Sans 3',sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:18px;line-height:1.6;color:var(--text);background:var(--paper)}
+h1,h2,h3{font-family:var(--head);color:var(--navy);margin:0;line-height:1.15}
+p{margin:0}
+a{color:inherit}
+img,svg{display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+/* Buttons */
+.btn{display:inline-block;font-family:var(--head);font-weight:700;font-size:16px;text-decoration:none;
+  background:var(--amber);color:var(--deep);padding:16px 30px;border-radius:6px;border:0;cursor:pointer;
+  box-shadow:0 2px 0 var(--amber-dk);transition:background .15s}
+.btn:hover{background:#FFB83D}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+
+/* Header */
+.top{background:var(--navy);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-word{display:flex;flex-direction:column;line-height:1}
+.brand-word b{font-family:var(--head);font-weight:800;font-size:20px;letter-spacing:1.2px;color:#fff}
+.brand-word span{font-family:var(--head);font-weight:600;font-size:10.5px;letter-spacing:7.6px;color:var(--sky);margin-top:5px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{font-family:var(--head);font-weight:600;font-size:15px;color:#fff;text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{border-color:var(--sky)}
+.nav .btn{padding:11px 20px;font-size:14px;border:0}
+.menu-btn{display:none;background:none;border:0;color:#fff;font:600 15px var(--head);cursor:pointer}
+
+/* Hero */
+.hero{background:var(--mist);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:40px;padding-top:72px;padding-bottom:150px}
+.hero h1{font-size:clamp(38px,4.4vw,56px);font-weight:800;letter-spacing:-.5px}
+.hero h1 .line2{display:block;color:var(--steel)}
+.hero p.lead{font-size:21px;max-width:33em;margin:24px 0 36px;color:#2A4462}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero-cta .link{font-family:var(--head);font-weight:700;font-size:16px;color:var(--navy)}
+.dome{background:var(--navy);border-radius:50% 50% 0 0 / 120px 120px 0 0;margin-top:-110px;position:relative;padding:70px 0 64px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;color:#D7E6F5}
+.pillar svg{width:56px;height:56px;margin-bottom:18px}
+.pillar h3{color:#fff;font-size:20px;margin-bottom:8px}
+.pillar p{font-size:17px}
+
+/* Stats */
+.stats{background:var(--deep);color:#fff;padding:0 0 72px}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid rgba(255,255,255,.12);padding-top:56px}
+.stat b{display:block;font-family:var(--head);font-weight:800;font-size:clamp(40px,4.4vw,56px);color:#fff;line-height:1}
+.stat span{display:block;margin-top:10px;color:#9FC3E3;font-size:17px}
+
+/* Sections */
+section.block{padding:104px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 56px}
+.sec-head h2{font-size:clamp(32px,3.6vw,44px);font-weight:800}
+.sec-head h2 .soft{color:var(--sky);display:block}
+.sec-head p{margin-top:18px;font-size:19px}
+
+/* Brands */
+.brands{background:var(--paper);padding:72px 0 80px;border-bottom:1px solid var(--line)}
+.brands h2{text-align:center;font-size:22px;font-weight:700;margin-bottom:36px}
+.logo-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.logo-tile{height:84px;border:1px solid var(--line);border-radius:6px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--head);font-weight:700;color:#9AB0C6;font-size:15px;filter:grayscale(1);background:#fff}
+.logo-tile img{max-width:72%;max-height:46px;opacity:.75}
+
+/* Categories */
+.cats{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:center}
+.cats-copy h2{font-size:clamp(30px,3.2vw,40px);font-weight:800;color:var(--sky);margin-bottom:6px}
+.cats-copy h2 + h2{color:var(--navy);margin-bottom:22px}
+.cats-copy p{margin-bottom:32px}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px 24px;text-align:center}
+.cat svg{width:62px;height:62px;margin:0 auto 12px}
+.cat span{font-family:var(--head);font-weight:600;font-size:15px;color:var(--navy);line-height:1.3;display:block}
+
+/* Problem / solution */
+.ps{background:var(--cloud)}
+.ps-table{max-width:980px;margin:0 auto;border-radius:10px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.ps-row{display:grid;grid-template-columns:1fr 1.25fr;border-top:1px solid var(--line)}
+.ps-row:first-child{border-top:0}
+.ps-row div{padding:26px 32px}
+.ps-row .prob{color:#5B6E84;background:#FBFDFF;border-right:1px solid var(--line)}
+.ps-row .prob strong{display:block;font-family:var(--head);color:var(--navy);font-size:17px;margin-bottom:4px}
+.ps-row .fix{display:flex;gap:16px;align-items:flex-start}
+.ps-row .fix svg{flex:0 0 26px;width:26px;height:26px;margin-top:2px}
+.ps-cols{display:grid;grid-template-columns:1fr 1.25fr;font-family:var(--head);font-weight:700;font-size:14px;color:#6E86A0;max-width:980px;margin:0 auto 12px;padding:0 32px}
+
+/* Channels */
+.channels{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.channel{border-radius:10px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.channel .art{height:168px;display:flex;align-items:center;justify-content:center}
+.channel .body{padding:26px 28px 30px}
+.channel h3{font-size:22px;margin-bottom:10px}
+.channel:nth-child(1) .art{background:var(--navy)}
+.channel:nth-child(2) .art{background:var(--sky)}
+.channel:nth-child(3) .art{background:var(--mist)}
+
+/* Process */
+.process{background:var(--navy);color:#C9DCEF}
+.process .sec-head h2{color:#fff}
+.process .sec-head h2 .soft{color:var(--sky)}
+.process .sec-head p{color:#C9DCEF}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;list-style:none;margin:0;padding:0;position:relative}
+.steps:before{content:"";position:absolute;left:28px;right:28px;top:27px;border-top:2px dashed rgba(63,169,229,.55)}
+.steps li{position:relative}
+.steps .num{width:56px;height:56px;border-radius:50%;background:var(--deep);border:2px solid var(--sky);color:#fff;
+  font-family:var(--head);font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;position:relative}
+.steps li:last-child .num{background:var(--amber);border-color:var(--amber);color:var(--deep)}
+.steps h3{color:#fff;font-size:19px;margin-bottom:8px}
+.steps p{font-size:16.5px}
+
+/* Partners + FAQ */
+.split{display:grid;grid-template-columns:1fr 1.2fr;gap:72px}
+.who h2,.faq h2{font-size:32px;font-weight:800;margin-bottom:26px}
+.who ul{list-style:none;padding:0;margin:0}
+.who li{padding:20px 0 20px 44px;border-top:1px solid var(--line);position:relative}
+.who li:last-child{border-bottom:1px solid var(--line)}
+.who li svg{position:absolute;left:0;top:22px;width:28px;height:28px}
+.who li strong{display:block;font-family:var(--head);color:var(--navy);font-size:18px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-family:var(--head);font-weight:700;color:var(--navy);font-size:18px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:4px;top:14px;font-size:28px;color:var(--sky);font-weight:600}
+.faq details[open] summary:after{content:"–"}
+.faq details p{padding:0 0 22px}
+
+/* CTA + contact */
+.cta{background:var(--deep);color:#C9DCEF;padding:96px 0}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.cta h2{color:#fff;font-size:clamp(34px,3.8vw,46px);font-weight:800;margin-bottom:20px}
+.cta p{font-size:19px;margin-bottom:30px}
+.contact-list{list-style:none;padding:0;margin:0}
+.contact-list li{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
+.contact-list svg{width:22px;height:22px;flex:0 0 22px;margin-top:4px}
+.contact-list a{color:#fff;text-decoration:none}
+form.partner{background:#fff;border-radius:10px;padding:36px;color:var(--text)}
+form.partner h3{font-size:22px;margin-bottom:22px}
+.field{margin-bottom:16px}
+.field label{display:block;font-family:var(--head);font-weight:600;font-size:14px;color:var(--navy);margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:17px;padding:12px 14px;border:1.5px solid var(--line);border-radius:6px;background:#fff;color:var(--text)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--sky)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form.partner .btn{width:100%;margin-top:6px}
+
+footer{background:var(--navy);color:#9FC3E3;padding:48px 0 36px;font-size:15px}
+.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+.foot nav{display:flex;gap:24px;flex-wrap:wrap}
+.foot nav a{color:#fff;text-decoration:none;font-family:var(--head);font-weight:600;font-size:14px}
+.legal{border-top:1px solid rgba(255,255,255,.12);margin-top:32px;padding-top:22px;font-size:13.5px;color:#7FA3C6}
+
+/* Responsive */
+@media (max-width:980px){
+  .nav{display:none;position:absolute;top:76px;left:0;right:0;background:var(--navy);flex-direction:column;padding:20px 24px 28px;gap:18px;align-items:flex-start}
+  .nav.open{display:flex}
+  .menu-btn{display:block}
+  .hero-grid,.cats,.split,.cta-grid{grid-template-columns:1fr}
+  .hero-grid{padding-bottom:140px}
+  .pillars,.channels{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .logo-wall{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:1fr;gap:28px}
+  .steps:before{left:27px;right:auto;top:28px;bottom:28px;border-top:0;border-left:2px dashed rgba(63,169,229,.55)}
+  .steps li{padding-left:80px}
+  .steps .num{position:absolute;left:0;top:0}
+  .ps-row,.ps-cols{grid-template-columns:1fr}
+  .ps-cols{display:none}
+  .ps-row .prob{border-right:0;border-bottom:1px dashed var(--line)}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .logo-wall{grid-template-columns:repeat(2,1fr)}
+  .two{grid-template-columns:1fr}
+  section.block{padding:76px 0}
+  form.partner{padding:26px 20px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="#164A7E"/>
+      <ellipse cx="32" cy="32" rx="13" ry="30" fill="none" stroke="#3FA9E5" stroke-width="1.6" opacity=".8"/>
+      <path d="M2 32h60" stroke="#3FA9E5" stroke-width="1.6" opacity=".6"/>
+      <polyline points="14,20 23.5,45 32,28 40.5,45 48,24" fill="none" stroke="#fff" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="49.5" cy="19.5" r="5" fill="#F5A623"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 26 26"><circle cx="13" cy="13" r="12" fill="#3FA9E5"/><path d="M7.5 13.5l3.6 3.6 7.4-7.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="WORLDWIDEDEALER home">
+      <svg width="44" height="44"><use href="#mark"/></svg>
+      <span class="brand-word"><b>WORLDWIDE</b><span>DEALER</span></span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav">
+      <a href="#what-we-do">What we do</a>
+      <a href="#categories">Categories</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn" href="#contact">Become a Brand Partner</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Grow your brand on Amazon. <span class="line2">We handle the rest.</span></h1>
+      <p class="lead">WORLDWIDEDEALER is a U.S. multichannel distributor. We buy your products wholesale, sell them as your authorized reseller and protect your brand on every marketplace.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#contact">Become a Brand Partner</a>
+        <a class="link" href="#how-it-works">See how it works</a>
+      </div>
+    </div>
+    <!-- Warehouse illustration -->
+    <svg viewBox="0 0 560 400" role="img" aria-label="Forklift loading boxes onto warehouse shelves">
+      <ellipse cx="300" cy="372" rx="270" ry="14" fill="#0E2D52" opacity=".10"/>
+      <!-- route from globe to box -->
+      <path d="M92 92 C 150 20, 250 30, 232 270" fill="none" stroke="#F5A623" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <g transform="translate(46,46) scale(1.45)"><use href="#mark" width="64" height="64"/></g>
+      <!-- shelving -->
+      <rect x="262" y="52" width="10" height="316" rx="2" fill="#0E2D52"/>
+      <rect x="400" y="52" width="10" height="316" rx="2" fill="#0E2D52"/>
+      <rect x="532" y="52" width="10" height="316" rx="2" fill="#0E2D52"/>
+      <rect x="256" y="138" width="292" height="9" rx="2" fill="#164A7E"/>
+      <rect x="256" y="230" width="292" height="9" rx="2" fill="#164A7E"/>
+      <rect x="256" y="322" width="292" height="9" rx="2" fill="#164A7E"/>
+      <!-- top shelf boxes -->
+      <rect x="282" y="88" width="62" height="50" rx="3" fill="#3FA9E5"/><rect x="306" y="88" width="14" height="50" fill="#fff" opacity=".55"/>
+      <rect x="350" y="106" width="42" height="32" rx="3" fill="#fff" stroke="#0E2D52" stroke-width="2.5"/>
+      <rect x="418" y="82" width="70" height="56" rx="3" fill="#164A7E"/><rect x="444" y="82" width="16" height="56" fill="#3FA9E5" opacity=".7"/>
+      <rect x="494" y="102" width="34" height="36" rx="3" fill="#BFE3F7"/>
+      <!-- mid shelf -->
+      <rect x="280" y="174" width="54" height="56" rx="3" fill="#fff" stroke="#0E2D52" stroke-width="2.5"/><path d="M280 192h54" stroke="#0E2D52" stroke-width="2"/>
+      <rect x="340" y="196" width="52" height="34" rx="3" fill="#3FA9E5"/>
+      <rect x="418" y="168" width="58" height="62" rx="3" fill="#BFE3F7"/><rect x="440" y="168" width="14" height="62" fill="#fff" opacity=".7"/>
+      <rect x="482" y="188" width="46" height="42" rx="3" fill="#0E2D52"/>
+      <!-- bottom shelf -->
+      <rect x="282" y="270" width="70" height="52" rx="3" fill="#164A7E"/><rect x="308" y="270" width="18" height="52" fill="#3FA9E5" opacity=".6"/>
+      <rect x="358" y="290" width="34" height="32" rx="3" fill="#F5A623"/>
+      <rect x="418" y="262" width="62" height="60" rx="3" fill="#fff" stroke="#0E2D52" stroke-width="2.5"/><path d="M449 262v60" stroke="#0E2D52" stroke-width="2"/>
+      <rect x="486" y="282" width="42" height="40" rx="3" fill="#3FA9E5"/>
+      <!-- forklift -->
+      <rect x="196" y="190" width="10" height="176" rx="2" fill="#0E2D52"/>
+      <rect x="206" y="340" width="64" height="7" rx="2" fill="#0E2D52"/>
+      <rect x="210" y="286" width="56" height="54" rx="3" fill="#fff" stroke="#0E2D52" stroke-width="2.5"/>
+      <rect x="230" y="286" width="16" height="54" fill="#3FA9E5" opacity=".55"/>
+      <rect x="98" y="210" width="8" height="84" rx="2" fill="#0E2D52"/>
+      <rect x="98" y="206" width="84" height="9" rx="3" fill="#0E2D52"/>
+      <rect x="174" y="206" width="8" height="84" rx="2" fill="#0E2D52"/>
+      <circle cx="142" cy="242" r="12" fill="#F2C9A0"/>
+      <path d="M130 238a12 12 0 0 1 24 0z" fill="#0E2D52"/>
+      <rect x="128" y="256" width="28" height="30" rx="6" fill="#3FA9E5"/>
+      <rect x="70" y="284" width="126" height="62" rx="9" fill="#F5A623"/>
+      <rect x="58" y="298" width="18" height="44" rx="4" fill="#0E2D52"/>
+      <rect x="150" y="296" width="34" height="18" rx="3" fill="#fff" opacity=".55"/>
+      <circle cx="102" cy="352" r="19" fill="#0E2D52"/><circle cx="102" cy="352" r="7" fill="#DDEFFB"/>
+      <circle cx="172" cy="352" r="19" fill="#0E2D52"/><circle cx="172" cy="352" r="7" fill="#DDEFFB"/>
+    </svg>
+  </div>
+
+  <div class="dome" id="what-we-do">
+    <div class="wrap pillars">
+      <div class="pillar">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><rect x="8" y="16" width="40" height="32" rx="3" fill="none" stroke="#3FA9E5" stroke-width="3"/><path d="M8 26h40M22 16v10M34 16v10" stroke="#3FA9E5" stroke-width="3"/><circle cx="44" cy="12" r="6" fill="#F5A623"/></svg>
+        <h3>We buy wholesale</h3>
+        <p>Real purchase orders at your wholesale price. No fees, no retainers, no consignment.</p>
+      </div>
+      <div class="pillar">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 6l18 7v13c0 12-8 20-18 24C18 46 10 38 10 26V13z" fill="none" stroke="#3FA9E5" stroke-width="3" stroke-linejoin="round"/><path d="M20 28l6 6 11-12" fill="none" stroke="#F5A623" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Authorized reseller</h3>
+        <p>Written authorization and a Brand Registry seller role. We sell by your rules and respect your MAP.</p>
+      </div>
+      <div class="pillar">
+        <svg viewBox="0 0 56 56" aria-hidden="true"><path d="M4 18h28v20H4zM32 24h10l8 8v6H32z" fill="none" stroke="#3FA9E5" stroke-width="3" stroke-linejoin="round"/><circle cx="14" cy="42" r="5" fill="#0E2D52" stroke="#F5A623" stroke-width="3"/><circle cx="41" cy="42" r="5" fill="#0E2D52" stroke="#F5A623" stroke-width="3"/></svg>
+        <h3>Fast FBA fulfillment</h3>
+        <p>Prime-eligible delivery across the U.S., with expansion to Amazon Canada and Mexico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Company in numbers">
+  <div class="wrap">
+    <div class="stat"><b>1,500+</b><span>Brands sold</span></div>
+    <div class="stat"><b>5</b><span>Sales channels</span></div>
+    <div class="stat"><b>4</b><span>Amazon marketplaces</span></div>
+    <div class="stat"><b>~10</b><span>Years in e-commerce</span></div>
+  </div>
+</section>
+
+<section class="brands" aria-labelledby="brands-title" hidden>
+  <div class="wrap">
+    <h2 id="brands-title">Brands we have sold</h2>
+    <!-- TODO: Serhat'ın verdiği marka logoları buraya gelecek (assets/brands/*.svg|png) -->
+    <div class="logo-wall">
+      <div class="logo-tile">Brand logo</div><div class="logo-tile">Brand logo</div><div class="logo-tile">Brand logo</div>
+      <div class="logo-tile">Brand logo</div><div class="logo-tile">Brand logo</div><div class="logo-tile">Brand logo</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="categories">
+  <div class="wrap cats">
+    <div class="cats-copy">
+      <h2>From kitchen to supplements,</h2>
+      <h2>we know what sells on Amazon.</h2>
+      <p>We focus on products priced between $30 and $150 in categories where a strong listing, steady stock and fair pricing make the difference.</p>
+      <a class="btn" href="#contact">Talk to us about your category</a>
+    </div>
+    <div class="cat-grid">
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><path d="M10 26h42v6c0 11-9 20-21 20S10 43 10 32z" fill="none" stroke="#164A7E" stroke-width="3"/><path d="M4 26h54" stroke="#3FA9E5" stroke-width="3" stroke-linecap="round"/><path d="M24 18c0-4 3-4 3-8M36 18c0-4 3-4 3-8" stroke="#3FA9E5" stroke-width="3" stroke-linecap="round" fill="none"/></svg><span>Home &amp; Kitchen</span></div>
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><rect x="20" y="16" width="22" height="38" rx="5" fill="none" stroke="#164A7E" stroke-width="3"/><rect x="23" y="8" width="16" height="8" rx="2" fill="none" stroke="#164A7E" stroke-width="3"/><path d="M31 28v14M24 35h14" stroke="#3FA9E5" stroke-width="3.4" stroke-linecap="round"/></svg><span>Health &amp; Household</span></div>
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><rect x="16" y="24" width="18" height="30" rx="4" fill="none" stroke="#164A7E" stroke-width="3"/><path d="M20 24v-8h10v8M22 10h6" stroke="#164A7E" stroke-width="3" fill="none" stroke-linejoin="round"/><rect x="38" y="32" width="12" height="22" rx="6" fill="none" stroke="#3FA9E5" stroke-width="3"/></svg><span>Beauty &amp; Personal Care</span></div>
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><path d="M12 20h38l-4 34H16z" fill="none" stroke="#164A7E" stroke-width="3" stroke-linejoin="round"/><path d="M22 20c0-7 4-11 9-11s9 4 9 11" fill="none" stroke="#3FA9E5" stroke-width="3"/></svg><span>Grocery &amp; Gourmet</span></div>
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><ellipse cx="31" cy="42" rx="12" ry="10" fill="none" stroke="#164A7E" stroke-width="3"/><circle cx="17" cy="26" r="5" fill="none" stroke="#3FA9E5" stroke-width="3"/><circle cx="27" cy="16" r="5" fill="none" stroke="#3FA9E5" stroke-width="3"/><circle cx="37" cy="16" r="5" fill="none" stroke="#3FA9E5" stroke-width="3"/><circle cx="46" cy="26" r="5" fill="none" stroke="#3FA9E5" stroke-width="3"/></svg><span>Pet Supplies</span></div>
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><circle cx="31" cy="31" r="21" fill="none" stroke="#164A7E" stroke-width="3"/><path d="M13 22c10 6 26 6 36 0M13 40c10-6 26-6 36 0M31 10v42" stroke="#3FA9E5" stroke-width="3" fill="none"/></svg><span>Sports &amp; Outdoors</span></div>
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><rect x="10" y="30" width="20" height="20" rx="3" fill="none" stroke="#164A7E" stroke-width="3"/><rect x="32" y="30" width="20" height="20" rx="3" fill="none" stroke="#164A7E" stroke-width="3"/><rect x="21" y="10" width="20" height="20" rx="3" fill="none" stroke="#3FA9E5" stroke-width="3"/></svg><span>Toys &amp; Games</span></div>
+      <div class="cat"><svg viewBox="0 0 62 62" aria-hidden="true"><path d="M14 52V24l17-12 17 12v28z" fill="none" stroke="#164A7E" stroke-width="3" stroke-linejoin="round"/><rect x="25" y="34" width="12" height="18" fill="none" stroke="#3FA9E5" stroke-width="3"/></svg><span>Tools &amp; Home Improvement</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block ps" aria-labelledby="ps-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="ps-title">When no one owns your Amazon channel, <span class="soft">anyone can.</span></h2>
+      <p>Most brands we talk to face the same four problems. Here is what changes when we become your authorized reseller.</p>
+    </div>
+    <div class="ps-cols"><span>The problem</span><span>What we do</span></div>
+    <div class="ps-table">
+      <div class="ps-row"><div class="prob"><strong>Price undercutting</strong>Unauthorized sellers race to the bottom.</div><div class="fix"><svg><use href="#i-check"/></svg><p>We follow your MAP policy in writing and work with you through Brand Registry to clean up the listing.</p></div></div>
+      <div class="ps-row"><div class="prob"><strong>Weak listings</strong>Wrong titles, poor images, missing details.</div><div class="fix"><svg><use href="#i-check"/></svg><p>We rebuild titles, images, bullets and A+ content, and you approve every change.</p></div></div>
+      <div class="ps-row"><div class="prob"><strong>Stockouts</strong>Lost Buy Box and lost ranking.</div><div class="fix"><svg><use href="#i-check"/></svg><p>We forecast demand and reorder on time to keep FBA inventory in stock.</p></div></div>
+      <div class="ps-row"><div class="prob"><strong>No visibility</strong>You do not know who sells what, or at what price.</div><div class="fix"><svg><use href="#i-check"/></svg><p>You get a monthly report on units sold, selling price and inventory.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" aria-labelledby="ch-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="ch-title">One partner. <span class="soft">Every major marketplace.</span></h2>
+    </div>
+    <div class="channels">
+      <article class="channel">
+        <div class="art"><svg width="120" height="96" viewBox="0 0 120 96" aria-hidden="true"><rect x="20" y="22" width="80" height="58" rx="6" fill="#164A7E"/><rect x="20" y="22" width="80" height="14" rx="6" fill="#3FA9E5"/><path d="M34 60c16 10 36 10 52 0" stroke="#F5A623" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M80 54l8 6-9 4" fill="none" stroke="#F5A623" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="body"><h3>Amazon U.S.</h3><p>Our core channel. FBA, Brand Registry, advertising and Buy Box management under one roof.</p></div>
+      </article>
+      <article class="channel">
+        <div class="art"><svg width="120" height="96" viewBox="0 0 120 96" aria-hidden="true"><circle cx="60" cy="48" r="34" fill="#fff" opacity=".25"/><circle cx="60" cy="48" r="34" fill="none" stroke="#fff" stroke-width="3"/><ellipse cx="60" cy="48" rx="15" ry="34" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M26 48h68" stroke="#fff" stroke-width="2.5"/><circle cx="84" cy="24" r="7" fill="#F5A623"/></svg></div>
+        <div class="body"><h3>New markets</h3><p>Amazon Canada and Mexico. Import, labeling, FBA and sales are handled by us.</p></div>
+      </article>
+      <article class="channel">
+        <div class="art"><svg width="140" height="96" viewBox="0 0 140 96" aria-hidden="true"><rect x="14" y="26" width="34" height="44" rx="5" fill="#fff" stroke="#164A7E" stroke-width="3"/><rect x="53" y="18" width="34" height="52" rx="5" fill="#164A7E"/><rect x="92" y="30" width="34" height="40" rx="5" fill="#3FA9E5"/><path d="M14 80h112" stroke="#164A7E" stroke-width="3" stroke-linecap="round"/></svg></div>
+        <div class="body"><h3>More channels</h3><p>Walmart, eBay, Shopify and Etsy, when it fits your brand and your pricing rules.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block process" id="how-it-works" aria-labelledby="hw-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="hw-title">How the partnership works</h2>
+      <p>From first call to first sale, usually within a few weeks.</p>
+    </div>
+    <ol class="steps">
+      <li><div class="num">1</div><h3>Intro call</h3><p>We learn your brand, pricing rules and goals.</p></li>
+      <li><div class="num">2</div><h3>Agreement</h3><p>Written authorization and a Brand Registry seller role.</p></li>
+      <li><div class="num">3</div><h3>First order</h3><p>We place a wholesale purchase order on your terms.</p></li>
+      <li><div class="num">4</div><h3>Launch</h3><p>Listings optimized and inventory shipped to Amazon FBA.</p></li>
+      <li><div class="num">5</div><h3>Grow</h3><p>Advertising, reorders and monthly sales reports.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap split">
+    <div class="who">
+      <h2>Who we partner with</h2>
+      <ul>
+        <li><svg><use href="#i-check"/></svg><strong>D2C brands</strong>Selling on Shopify or your own site and ready for Amazon.</li>
+        <li><svg><use href="#i-check"/></svg><strong>Manufacturers</strong>With proven products and a registered trademark.</li>
+        <li><svg><use href="#i-check"/></svg><strong>Brands already on Amazon U.S.</strong>Expanding to Canada and Mexico.</li>
+      </ul>
+    </div>
+    <div class="faq">
+      <h2>Questions brands ask us</h2>
+      <details><summary>Do you buy inventory or work on consignment?</summary><p>We buy wholesale with standard purchase orders. You get paid for the goods, not for what we sell later.</p></details>
+      <details><summary>Will you respect our pricing?</summary><p>Yes. We follow your MAP and pricing policy, and we put that in writing.</p></details>
+      <details><summary>What about the unauthorized sellers already on our listing?</summary><p>Once we are authorized, we work with you through Brand Registry to address them.</p></details>
+      <details><summary>Do we keep control of our brand?</summary><p>Always. You own the brand and approve listing content.</p></details>
+      <details><summary>What is the minimum order?</summary><p>We work with your MOQ. Tell us your terms on the first call.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact" aria-labelledby="ct-title">
+  <div class="wrap cta-grid">
+    <div>
+      <h2 id="ct-title">Ready to grow on Amazon?</h2>
+      <p>Tell us about your brand. We reply within one business day.</p>
+      <ul class="contact-list">
+        <li><svg viewBox="0 0 22 22" aria-hidden="true"><rect x="2" y="4" width="18" height="14" rx="2" fill="none" stroke="#3FA9E5" stroke-width="2"/><path d="M3 6l8 6 8-6" fill="none" stroke="#3FA9E5" stroke-width="2"/></svg><a href="mailto:info@worldwidedealerllc.com">info@worldwidedealerllc.com</a></li>
+        <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 2h3l2 5-2 1.5a11 11 0 0 0 4.5 4.5L15 11l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 4a2 2 0 0 1 2-2z" fill="none" stroke="#3FA9E5" stroke-width="2" stroke-linejoin="round"/></svg><a href="tel:+19178182887">+1 917 818 2887</a></li>
+        <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 20s7-6.2 7-11.5A7 7 0 0 0 4 8.5C4 13.8 11 20 11 20z" fill="none" stroke="#3FA9E5" stroke-width="2"/><circle cx="11" cy="8.5" r="2.5" fill="#F5A623"/></svg><span>5123 Queens Boulevard APT 8A<br>Woodside, NY 11377</span></li>
+      </ul>
+    </div>
+    <!-- TODO: form gönderimi (şimdilik e-posta istemcisini açar) -->
+    <form class="partner" action="mailto:info@worldwidedealerllc.com" method="post" enctype="text/plain">
+      <h3>Become a brand partner</h3>
+      <div class="two">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="f-brand">Brand</label><input id="f-brand" name="brand" required autocomplete="organization"></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="f-email">Work email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="f-site">Website</label><input id="f-site" name="website" type="url" placeholder="https://"></div>
+      </div>
+      <div class="field"><label for="f-amz">Are you on Amazon today?</label>
+        <select id="f-amz" name="on_amazon"><option>Yes, we sell ourselves</option><option>Yes, other sellers carry us</option><option>No, not yet</option><option>Not sure</option></select></div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4"></textarea></div>
+      <button class="btn" type="submit">Send to our team</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="brand" href="#top" aria-label="WORLDWIDEDEALER home">
+        <svg width="40" height="40"><use href="#mark"/></svg>
+        <span class="brand-word"><b>WORLDWIDE</b><span>DEALER</span></span>
+      </a>
+      <nav aria-label="Footer">
+        <a href="#what-we-do">What we do</a><a href="#categories">Categories</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <p class="legal">© 2026 WORLDWIDEDEALER LLC · 5123 Queens Boulevard APT 8A, Woodside, NY 11377. Amazon is a trademark of Amazon.com, Inc. WORLDWIDEDEALER LLC is an independent seller and is not affiliated with Amazon.com, Inc. Brand names and logos belong to their respective owners.</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', () => { const o = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); }));
+</script>
+</body>
+</html>
