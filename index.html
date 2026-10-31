@@ -550,7 +550,7 @@ footer{background:var(--steel);color:#BFD8EE;padding:48px 0 36px;font-size:14.5p
         <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 20s7-6.2 7-11.5A7 7 0 0 0 4 8.5C4 13.8 11 20 11 20z" fill="none" stroke="#41B3E6" stroke-width="2"/><circle cx="11" cy="8.5" r="2.5" fill="#F5A623"/></svg><span><b style="color:#fff">Office:</b> 5123 Queens Boulevard, Woodside, NY 11377<br><b style="color:#fff">Fulfillment hubs:</b> Chicago, IL · Clifton, NJ</span></li>
       </ul>
     </div>
-    <form class="partner" action="mailto:partnerships@worldwidedealerllc.com" method="post" enctype="text/plain">
+    <form class="partner" id="partner-form">
       <h3>Become a partner</h3>
       <div class="pair">
         <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" required autocomplete="name"></div>
@@ -580,7 +580,7 @@ footer{background:var(--steel);color:#BFD8EE;padding:48px 0 36px;font-size:14.5p
         <a href="#about">About us</a><a href="#distribution">Distribution</a><a href="#brand-partners">For brands</a><a href="#contact">Contact</a>
       </nav>
     </div>
-    <p class="legal">© 2026 WORLDWIDEDEALER LLC · New York limited liability company, formed April 7, 2021 · 5123 Queens Boulevard, Woodside, NY 11377. Amazon is a trademark of Amazon.com, Inc. WORLDWIDEDEALER LLC is an independent seller and is not affiliated with Amazon.com, Inc. Brand names and logos belong to their respective owners.</p>
+    <p class="legal">© 2026 WORLDWIDEDEALER LLC · Delaware limited liability company, formed April 7, 2021 · 5123 Queens Boulevard, Woodside, NY 11377. Amazon is a trademark of Amazon.com, Inc. WORLDWIDEDEALER LLC is an independent seller and is not affiliated with Amazon.com, Inc. Brand names and logos belong to their respective owners.</p>
   </div>
 </footer>
 
@@ -588,6 +588,14 @@ footer{background:var(--steel);color:#BFD8EE;padding:48px 0 36px;font-size:14.5p
   const btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
   btn.addEventListener('click', () => { const o = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); }));
+
+  // Partner form opens a prefilled email (no insecure form action)
+  document.getElementById('partner-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target.elements;
+    const body = `Name: ${f.name.value}\nCompany: ${f.company.value}\nEmail: ${f.email.value}\nWebsite: ${f.website.value}\nI am a: ${f.type.value}\n\n${f.message.value}`;
+    location.href = 'mailto:partnerships@worldwidedealerllc.com?subject=' + encodeURIComponent('Partner inquiry: ' + f.company.value) + '&body=' + encodeURIComponent(body);
+  });
 
   // Scroll reveals, staggered within each group
   const groups = ['.pillar', '.cat', '.stat-card', '.photo-row > div', '.ps-row', '.steps li', '.who li', '.faq details', '.circle'];
